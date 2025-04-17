@@ -21,9 +21,7 @@ function Map() {
   const [map, setMap] = React.useState(null);
 
   const onLoad = React.useCallback((mapInstance) => {
-    const bounds = new window.google.maps.LatLngBounds(center);
-    mapInstance.fitBounds(bounds);
-    setMap(mapInstance);
+    setMap(mapInstance); 
   }, []);
 
   const onUnmount = React.useCallback(() => {
@@ -34,7 +32,7 @@ function Map() {
     <GoogleMap
       mapContainerStyle={containerStyle}
       center={center}
-      zoom={5} 
+      zoom={6} 
       onLoad={onLoad}
       onUnmount={onUnmount}
     >
