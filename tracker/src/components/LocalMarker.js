@@ -1,3 +1,6 @@
+//unused, decided to go lightweight with the map
+
+
 import { LiaGripfire } from "react-icons/lia";
 import React from 'react'
 
